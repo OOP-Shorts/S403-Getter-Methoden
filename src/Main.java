@@ -1,9 +1,9 @@
 public class Main {
 
-    /*
-        Hier soll die Instanz erstellt werden.
-     */
     public static void main(String[] args) {
-
+        Dog dog = new Dog("Rex", "German Shepherd", 5);
+        if (dog.getBreed().equals("German Shepherd") || dog.getBreed().equals("Rottweiler")) {
+            dog.bark();
+        }
     }
 }
